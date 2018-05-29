@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid">
+	<div class="page-header">
+		<h1>Register Users Form</h1>
+
+		<p class="lead">Register User for Online Exam</p>
+		<hr>
+	</div>
+</div>
+
+<div class="container">
+
+	<form>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="inputEmail4">Email</label> <input type="email"
+					class="form-control" id="inputEmail4" placeholder="Email" name="userEmail" [(ngModel)]="model.userEmail">
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="sel1">Select Technology (select one):</label> 
+				<select class="form-control" id="sel1" name="tech" [(ngModel)]="model.tech">
+					<option *ngFor="let st of techno" >
+					{{st.technology}}
+					</option>
+					
+				</select>
+			</div>
+		</div>
+	</form>
+	<input type="button" class="btn btn-success" value="Register" (click)="registerUser()">
+</div>
+
+
+
+

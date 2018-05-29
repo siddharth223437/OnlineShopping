@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ssarweb Maven Webapp
+Implementation-Version: 1.0
+Built-By: sid
+Implementation-Vendor-Id: com.ecom.ssar.ssarweb
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+Main-Class: com.ecom.ssar.main.SSarMain
+
