@@ -15,24 +15,25 @@
 	<name>ssarweb Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-			<dependency>
-				<groupId>com.ecom.ssar.common</groupId>
-				<artifactId>common</artifactId>
-				<version>1.0</version>
-			</dependency>
-			<dependency>
-				<groupId>com.ecom.ssar.services</groupId>
-				<artifactId>services</artifactId>
-				<version>1.0</version>
-			</dependency>
-			<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
+		<dependency>
+			<groupId>com.ecom.ssar.common</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ecom.ssar.services</groupId>
+			<artifactId>services</artifactId>
+			<version>1.0</version>
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>ssarweb</finalName>
+		<plugins>
+			<!-- Package as an executable jar/war -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+		<finalName>ssar</finalName>
 	</build>
 </project>
